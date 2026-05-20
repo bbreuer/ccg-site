@@ -285,9 +285,18 @@ a { text-decoration: none; color: inherit; }
     overflow: hidden;
     aspect-ratio: 16/9;
 }
-.chat-shell { aspect-ratio: auto; min-height: 600px; }
+.chat-shell {
+    aspect-ratio: auto;
+    height: 720px;
+    min-height: 600px;
+}
 .player-shell iframe, .chat-shell iframe {
-    width: 100%; height: 100%; border: 0; display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
 }
 .player-shell::after {
     content: "";
