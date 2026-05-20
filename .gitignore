@@ -1,0 +1,19 @@
+node_modules/
+.env
+.env.local
+*.log
+server.log
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Claude Code local state
+.claude/

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOL CAT GANG // LIVE TRANSMISSION</title>
+    <link rel="icon" type="image/png" href="/CCG Logo Border Small.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=VT323&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="ccg.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SYSTEM STATUS BAR -->
+    <div class="sys-bar">
+        <span class="blink"></span>
+        <span>SIGNAL: LOCKED</span>
+        <span class="sep">//</span>
+        <span>NODE: CCG-MAIN.01</span>
+        <span class="sep">//</span>
+        <span>STREAMER: SERENMEW</span>
+        <span class="sep hide-sm">//</span>
+        <span class="hide-sm">UPTIME: 247h 12m</span>
+        <span class="sep hide-sm">//</span>
+        <span class="hide-sm" style="color:var(--ccg-yellow)">PRESS [F] TO PURR</span>
+    </div>
+
+    <!-- NAV -->
+    <header class="nav-shell">
+        <a href="/dist/index.html" class="nav-brand">
+            <img src="/noborder.png" alt="CCG">
+            <span class="brand-text">
+                <span class="brand-mark">COOL CAT GANG</span>
+                <span class="brand-sub">EST. ©2024 // ARCADE-CLASS</span>
+            </span>
+        </a>
+        <nav class="nav-links">
+            <a href="/dist/index.html" class="nav-link active">Live</a>
+            <a href="/dist/team_members_page.html" class="nav-link">Roster</a>
+            <a href="/dist/events_page.html" class="nav-link">Events</a>
+            <a href="#" class="nav-link">Merch</a>
+        </nav>
+    </header>
+
+    <!-- HERO + STREAM -->
+    <main class="stream-canvas">
+        <!-- LEFT: Title + Player -->
+        <section>
+            <div class="reveal d0">
+                <div class="boot-line">// transmission begins in t–0.001s</div>
+                <h1 class="hero-title glitch">CCG <span class="accent">★</span> LIVE</h1>
+                <div class="hero-meta">
+                    <span class="tag">CH.01</span>
+                    <span class="tag">SERENMEW</span>
+                    <span class="tag" style="color:var(--ccg-magenta);border-color:var(--ccg-magenta);">NOW PLAYING ★ SM64</span>
+                </div>
+            </div>
+
+            <div class="live-frame reveal d1">
+                <div class="live-header">
+                    <span>&gt;_ player.exe</span>
+                    <span class="live-tag">LIVE</span>
+                </div>
+                <div class="player-shell">
+                    <iframe src="https://player.twitch.tv/?channel=serenmow&parent=twitch.com&parent=coolcatgang.netlify.app" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIGHT: Chat + Side info -->
+        <aside class="side-stack reveal d2">
+            <div class="info-card">
+                <span class="corner tl"></span><span class="corner tr"></span>
+                <span class="corner bl"></span><span class="corner br"></span>
+                <div class="info-label">// NOW STREAMING</div>
+                <div class="info-body">
+                    <div style="font-family:'Monoton',sans-serif;font-size:30px;color:var(--ccg-cyan-bright);margin:6px 0;text-shadow:1px 0 0 var(--ccg-magenta);">SERENMEW</div>
+                    <div style="font-family:'VT323',monospace;font-size:18px;color:var(--ccg-yellow);letter-spacing:0.1em;">SUPER MARIO 64 — 70 STAR</div>
+                    <div style="margin-top:8px;color:var(--ccg-grey);font-size:12px;line-height:1.7;">Speedrunning the cosmos one star at a time. Chat is live — drop in, cause chaos, leave a paw print.</div>
+                </div>
+            </div>
+
+            <div class="live-frame" style="padding:8px;">
+                <div class="live-header" style="margin-bottom:6px;padding:0 6px;">
+                    <span>&gt;_ chat.sys</span>
+                    <span style="color:var(--ccg-lime);">● ONLINE</span>
+                </div>
+                <div class="chat-shell">
+                    <iframe id="chat_embed" src="https://www.twitch.tv/embed/serenmow/chat?parent=coolcatgang.netlify.app&darkpopout"></iframe>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span class="corner tl"></span><span class="corner tr"></span>
+                <span class="corner bl"></span><span class="corner br"></span>
+                <div class="info-label">// SQUAD MEMBERS</div>
+                <div class="info-body" style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-family:'VT323',monospace;font-size:18px;letter-spacing:0.12em;">
+                    <div>▸ <span style="color:var(--ccg-cyan-bright);">SERENMEW</span></div>
+                    <div>▸ <span style="color:var(--ccg-cyan-bright);">SILVER</span></div>
+                    <div>▸ <span style="color:var(--ccg-cyan-bright);">THAROAH</span></div>
+                    <div>▸ <span style="color:var(--ccg-cyan-bright);">ANIMEE</span></div>
+                </div>
+                <a href="/dist/team_members_page.html" style="display:inline-block;margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--ccg-yellow);border-bottom:1px solid var(--ccg-yellow);padding-bottom:2px;">→ View Full Roster</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- TICKER -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>★ COOL CAT GANG</span>
+            <span class="star">●</span>
+            <span>MARIO 64 // 70-STAR // 16-STAR // 1-STAR // 0-STAR</span>
+            <span class="star">●</span>
+            <span>SUBSCRIBE FOR PURR EMOTES</span>
+            <span class="star">●</span>
+            <span>DISCORD COMMUNITY OPEN 24/7</span>
+            <span class="star">●</span>
+            <span>★ COOL CAT GANG</span>
+            <span class="star">●</span>
+            <span>MARIO 64 // 70-STAR // 16-STAR // 1-STAR // 0-STAR</span>
+            <span class="star">●</span>
+            <span>SUBSCRIBE FOR PURR EMOTES</span>
+            <span class="star">●</span>
+            <span>DISCORD COMMUNITY OPEN 24/7</span>
+            <span class="star">●</span>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-shell">
+        <div class="copyright">©2024 <b>COOL CAT GANG</b> — ALL RIGHTS RESERVED // BUILT BY CATS, FOR CATS</div>
+        <div class="social-row">
+            <a href="https://www.twitch.tv/coolcatgang" aria-label="Twitch"><img src="/twitch.svg"></a>
+            <a href="https://discord.gg/AAdbzBq5Hc" aria-label="Discord"><img src="/discord.png"></a>
+            <a href="https://www.youtube.com/coolcatgang" aria-label="YouTube"><img src="/youtube.png"></a>
+            <a href="https://twitter.com/CoolCatsGame" aria-label="X / Twitter"><img src="/x-twitter.png"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

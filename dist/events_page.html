@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOL CAT GANG // EVENTS</title>
+    <link rel="icon" type="image/png" href="/CCG Logo Border Small.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=VT323&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="ccg.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SYSTEM STATUS BAR -->
+    <div class="sys-bar">
+        <span class="blink"></span>
+        <span>TOURNAMENT.SYS — IDLE</span>
+        <span class="sep">//</span>
+        <span>2 EVENTS OPEN FOR ENTRY</span>
+        <span class="sep hide-sm">//</span>
+        <span class="hide-sm">REGISTRATION WINDOW: 14d</span>
+        <span class="sep hide-sm">//</span>
+        <span class="hide-sm" style="color:var(--ccg-yellow)">QUEUE: ACCEPTING</span>
+    </div>
+
+    <!-- NAV -->
+    <header class="nav-shell">
+        <a href="/dist/index.html" class="nav-brand">
+            <img src="/noborder.png" alt="CCG">
+            <span class="brand-text">
+                <span class="brand-mark">COOL CAT GANG</span>
+                <span class="brand-sub">EST. ©2024 // ARCADE-CLASS</span>
+            </span>
+        </a>
+        <nav class="nav-links">
+            <a href="/dist/index.html" class="nav-link">Live</a>
+            <a href="/dist/team_members_page.html" class="nav-link">Roster</a>
+            <a href="/dist/events_page.html" class="nav-link active">Events</a>
+            <a href="#" class="nav-link">Merch</a>
+        </nav>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner reveal d0">
+        <div class="crumb">/// ccg.system &gt; /tournaments &gt; queue.dat</div>
+        <h1 class="glitch">ENTER<br>THE&nbsp;PIT</h1>
+        <p class="deck">
+            Two tournaments. Two paths. Either you star-grind with the world-class, or you go
+            full-send any-percent. Slot in your credentials below — runners get the call.
+        </p>
+    </section>
+
+    <!-- EVENTS GRID -->
+    <section class="events-grid page-bottom-pad">
+
+        <!-- 16 STAR OPEN -->
+        <article class="tourney-card reveal d1">
+            <span class="tourney-flag open">▸ REGISTRATION OPEN</span>
+            <div class="tourney-poster">
+                <img src="/16_open_logo_star.png" alt="16 Star Open">
+            </div>
+            <h2 class="tourney-title glitch">16-STAR OPEN</h2>
+            <div class="tourney-sub">SM64 ▸ CATEGORY EXTENSION</div>
+
+            <div class="tourney-meta">
+                <div class="mcell">
+                    <div class="mlabel">Format</div>
+                    <div class="mval">SINGLE ELIM</div>
+                </div>
+                <div class="mcell">
+                    <div class="mlabel">Prize</div>
+                    <div class="mval">$500 + GLORY</div>
+                </div>
+                <div class="mcell">
+                    <div class="mlabel">Date</div>
+                    <div class="mval">TBA</div>
+                </div>
+            </div>
+
+            <form class="term-form" action="#" method="POST" onsubmit="return false;">
+                <div class="term-field">
+                    <label>handle</label>
+                    <input type="text" placeholder="your_runner_name" autocomplete="off"/>
+                </div>
+                <div class="term-field">
+                    <label>email</label>
+                    <input type="email" placeholder="you@subspace.net" autocomplete="off"/>
+                </div>
+                <div class="term-field">
+                    <label>twitch</label>
+                    <input type="text" placeholder="twitch.tv/_____" autocomplete="off"/>
+                </div>
+                <button type="submit" class="term-submit" disabled>Submit Entry</button>
+            </form>
+        </article>
+
+        <!-- ANY% OPEN -->
+        <article class="tourney-card reveal d2">
+            <span class="tourney-flag any">▸ REGISTRATION OPEN</span>
+            <div class="tourney-poster">
+                <img src="/any_open.png" alt="Any% Open">
+            </div>
+            <h2 class="tourney-title glitch" style="text-shadow: 2px 0 0 var(--ccg-magenta);">ANY% OPEN</h2>
+            <div class="tourney-sub" style="color: var(--ccg-magenta);">SM64 ▸ FASTEST BOWSER KILL</div>
+
+            <div class="tourney-meta">
+                <div class="mcell">
+                    <div class="mlabel">Format</div>
+                    <div class="mval">DOUBLE ELIM</div>
+                </div>
+                <div class="mcell">
+                    <div class="mlabel">Prize</div>
+                    <div class="mval">$500 + GLORY</div>
+                </div>
+                <div class="mcell">
+                    <div class="mlabel">Date</div>
+                    <div class="mval">TBA</div>
+                </div>
+            </div>
+
+            <form class="term-form" action="#" method="POST" onsubmit="return false;">
+                <div class="term-field">
+                    <label>handle</label>
+                    <input type="text" placeholder="your_runner_name" autocomplete="off"/>
+                </div>
+                <div class="term-field">
+                    <label>email</label>
+                    <input type="email" placeholder="you@subspace.net" autocomplete="off"/>
+                </div>
+                <div class="term-field">
+                    <label>twitch</label>
+                    <input type="text" placeholder="twitch.tv/_____" autocomplete="off"/>
+                </div>
+                <button type="submit" class="term-submit" disabled>Submit Entry</button>
+            </form>
+        </article>
+
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>★ REGISTRATION OPEN</span>
+            <span class="star">●</span>
+            <span>16-STAR OPEN // ANY% OPEN</span>
+            <span class="star">●</span>
+            <span>SUBMIT YOUR HANDLE</span>
+            <span class="star">●</span>
+            <span>RUNNERS GET THE CALL</span>
+            <span class="star">●</span>
+            <span>★ REGISTRATION OPEN</span>
+            <span class="star">●</span>
+            <span>16-STAR OPEN // ANY% OPEN</span>
+            <span class="star">●</span>
+            <span>SUBMIT YOUR HANDLE</span>
+            <span class="star">●</span>
+            <span>RUNNERS GET THE CALL</span>
+            <span class="star">●</span>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-shell">
+        <div class="copyright">©2024 <b>COOL CAT GANG</b> — ALL RIGHTS RESERVED // BUILT BY CATS, FOR CATS</div>
+        <div class="social-row">
+            <a href="https://www.twitch.tv/coolcatgang"><img src="/twitch.svg"></a>
+            <a href="https://discord.gg/AAdbzBq5Hc"><img src="/discord.png"></a>
+            <a href="https://www.youtube.com/coolcatgang"><img src="/youtube.png"></a>
+            <a href="https://twitter.com/CoolCatsGame"><img src="/x-twitter.png"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
